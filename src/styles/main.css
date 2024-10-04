@@ -139,13 +139,13 @@ button {
 .end-message-container .user-selection {
     padding: 4px 15px;
     margin: 30px 0;
-    border-radius: 10px;
+    border-radius: 20px;
     color: var(--Orange);
     background-color: var(--Dark-Blue);
 }
 
 .end-message-container output {
-    margin-left: 3px;
+    margin: 0 3px;
 }
 
 .attribution {
