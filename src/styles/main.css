@@ -34,6 +34,120 @@ body {
     grid-template-rows: 1fr 50px;
 }
 
+/* START WITH THE GENERAL / STANDARD STYLES */
+h1 {
+    color: white;
+}
+
+p {
+    font-weight: 500;
+    line-height: 1.5;
+    color: var(--Light-Grey);
+}
+
+button {
+    border: none;
+    transition: .3s ease;
+    font: 700 1.8rem var(--primary-fonts);
+    color: var(--Light-Grey);
+}
+
+.hidden {
+    display: none !important;
+}
+
+.circle {
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    background-color: var(--Dark-Blue);
+}
+
+.rating-component-container {
+    margin: auto;
+    max-width: 450px;
+    padding: 35px;
+    border-radius: 25px;
+    background-image: linear-gradient(183deg, hsl(213 19% 16% / 1), hsl(216, 27%, 12%));
+}
+
+.rating-component-container > div {
+    overflow: hidden;
+    transition: .5s ease;
+}
+
+.rating-component-container h1+p {
+    margin-top: 15px;
+}
+
+.form-container>*~* {
+    margin-top: 27px;
+}
+
+.form-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 2px var(--Very-Dark-Blue);
+    margin-bottom: 40px;
+}
+
+.rating-btns {
+    display: flex;
+    justify-content: space-between;
+}
+
+.rating-btns button:hover {
+    color: var(--Very-Dark-Blue);
+    background-color: var(--Orange);
+}
+
+.rating-btns button:active {
+    scale: .97;
+}
+
+.rating-btns button.selected {
+    color: var(--Very-Dark-Blue);
+    background-color: var(--White);
+}
+
+.submit-btn {
+    width: 100%;
+    height: 50px;
+    border: none;
+    border-radius: 25px;
+    color: var(--Very-Dark-Blue);
+    background-color: var(--Orange);
+}
+
+.submit-btn:hover {
+    background-color: var(--White);
+}
+
+.submit-btn:active {
+    scale: .985;
+}
+
+.end-message-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.end-message-container .user-selection {
+    padding: 4px 15px;
+    margin: 30px 0;
+    border-radius: 10px;
+    color: var(--Orange);
+    background-color: var(--Dark-Blue);
+}
+
+.end-message-container output {
+    margin-left: 3px;
+}
+
 .attribution {
     font-size: 12px;
     color: white;
